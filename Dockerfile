@@ -1,4 +1,4 @@
-FROM rigormortiz/ubuntu_novnc:zesty
+FROM rigormortiz/ubuntu_novnc:latest
 
 MAINTAINER Mike Ortiz <mike@jellydice.com>
 
