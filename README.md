@@ -27,6 +27,9 @@ docker run -d -p 5900:5900 -p 6080:6080 rigormortiz/ubuntu_i3:zesty
 
 ## Noteworthy
 
+### Capabilities
+i3bar wants access to certain system calls/capabilities that are not available to docker containers by default. The default i3bar configuration will throw an error (which can safely be ignored) if you don't add the `CAP_SYS_ADMIN` capability via the `--cap-add` flag to the `docker run` command. Alternatively you can run the container in priveleged mode. I generally try to avoid that, but it is an option!
+
 ### Exposed ports
 
 - x11vnc is exposed on port `5900`
